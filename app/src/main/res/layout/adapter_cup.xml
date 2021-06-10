@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:background="@drawable/corner_oneside"
+    android:layout_height="80dp">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:id="@+id/txt_numbercup"
+    android:text="1"
+    android:layout_below="@id/txt_name"
+    android:textColor="@color/colortien"
+    android:textSize="18sp"
+    android:layout_marginLeft="5dp"
+    android:gravity="center"
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_toLeftOf="@id/txt_money"
+        android:layout_alignParentLeft="true"
+        android:text="Kem tuyet chanh"
+        android:textSize="@dimen/text_13sp"
+        android:id="@+id/txt_name"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/txt_delete"
+        android:text="72000"
+        android:layout_margin="5dp"
+        android:textColor="@color/colortien"
+        android:id="@+id/txt_money"
+        />
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/txt_delete"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/trongoc"
+        android:src="@drawable/ic_baseline_add_24"
+        android:gravity="center"
+        android:textSize="5sp"
+        android:id="@+id/btn_add"
+        />
+    <TextView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:textColor="@color/colortien"
+        android:layout_below="@id/txt_delete"
+        android:layout_marginTop="5dp"
+        android:text="1"
+        android:layout_toLeftOf="@id/btn_add"
+        android:gravity="center"
+        android:textSize="10sp"
+        android:id="@+id/txt_sl"
+        />
+
+    <ImageButton
+        android:id="@+id/btn_minus"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/txt_delete"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@id/txt_sl"
+        android:background="@drawable/trongoc"
+        android:gravity="center"
+        android:src="@drawable/ic_baseline_remove_24"
+        android:textSize="10sp" />
+    <TextView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:text="x"
+        android:gravity="center"
+        android:id="@+id/txt_delete"
+        />
+
+</RelativeLayout>

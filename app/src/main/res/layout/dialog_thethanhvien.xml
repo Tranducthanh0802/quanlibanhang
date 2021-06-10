@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#BDBDBD">
+    <RelativeLayout
+        android:layout_width="400dp"
+        android:layout_height="150dp"
+        android:layout_margin="30dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        >
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_toLeftOf="@id/txt_tittle"
+            android:src="@drawable/ic_baseline_card_membership_24"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="The thanh vien"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/mauchu"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/txt_tittle"
+            android:textDirection="firstStrong"
+            />
+
+        <Button
+            android:id="@+id/btn_searchnumbershipcard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_tittle"
+            android:background="@drawable/trongoc"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:textSize="@dimen/text_13sp"
+            android:drawableLeft="@drawable/ic_baseline_search_24"
+            android:text="kiem tra" />
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_tittle"
+            android:textSize="@dimen/text_13sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/btn_searchnumbershipcard"
+            android:id="@+id/edt_fillidnumbership"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edt_fillidnumbership"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colortien"
+            android:textSize="@dimen/text_13sp"
+
+            android:id="@+id/txt_notification"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "885596027999",
+    "project_id": "pr2021-22b34",
+    "storage_bucket": "pr2021-22b34.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:885596027999:android:5d89a02359e9939619efea",
+        "android_client_info": {
+          "package_name": "tranthanh.dmt.appbanhang"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "885596027999-sn3g971s9hbqkj7j7tn9msr4mhta3eu9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVW47ir2u9wbn4mWDAske4kdeSXosH36c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "885596027999-sn3g971s9hbqkj7j7tn9msr4mhta3eu9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
