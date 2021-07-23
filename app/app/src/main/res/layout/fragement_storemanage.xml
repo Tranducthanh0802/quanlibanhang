@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="10"
+    android:background="#7DA3A1"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:drawableTop="@drawable/ic_baseline_clear_24"
+            android:text="Delete all"
+            android:background="@drawable/trongoc"
+            android:textSize="@dimen/text_7sp" />
+
+        <Button
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:drawableTop="@drawable/ic_baseline_cancel_presentation_24"
+            android:text="dong cua so"
+            android:layout_marginBottom="5dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/text_7sp"
+            android:background="@drawable/trongoc"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/btn_out"
+            />
+        <Button
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_above="@id/btn_pay"
+            android:text="khuyen mai"
+            android:drawableTop="@drawable/ic_baseline_card_giftcard_24"
+            android:id="@+id/btn_discount"
+            android:layout_centerHorizontal="true"
+
+            android:textSize="@dimen/text_7sp"
+            android:background="@drawable/trongoc"
+            />
+            <Button
+                android:layout_marginBottom="5dp"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_above="@id/btn_discount"
+                android:text="Thanh vien"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/text_7sp"
+                android:background="@drawable/trongoc"
+                android:drawableTop="@drawable/ic_baseline_card_membership_24"
+                android:id="@+id/btn_membership"
+
+                />
+        <Button
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_above="@id/btn_membership"
+            android:background="@drawable/trongoc"
+            android:layout_margin="5dp"
+            android:text="Dang ky"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/text_7sp"
+            android:drawableTop="@drawable/ic_baseline_app_registration_24"
+            android:id="@+id/btn_dangkimembership"
+            android:layout_marginBottom="10dp"
+            />
+
+        <Button
+            android:layout_margin="5dp"
+            android:id="@+id/btn_pay"
+            android:textSize="@dimen/text_7sp"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_above="@id/btn_out"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/trongoc"
+            android:drawableTop="@drawable/ic_baseline_payment_24"
+            android:text="Thanh Toan" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_weight="3.5"
+        android:layout_width="0dp"
+        android:weightSum="10"
+        android:orientation="vertical"
+        android:background="@drawable/corner_listcup"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:paddingRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/corner_oneside"
+            android:layout_weight="1.8">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BAN PHA CHE"
+                android:textColor="#D31C0F"
+                android:id="@+id/table"
+                android:layout_marginLeft="5dp"
+                />
+
+            <TextView
+                android:id="@+id/numbertable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/mauchu"
+                android:text="So coc:" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/time"
+                android:text="bat dau:"
+                android:textColor="@color/mauchu"
+                android:layout_below="@id/table"
+                android:layout_margin="5dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/numbertable"
+                android:id="@+id/numbercustomer"
+                android:text="so khach:"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/mauchu"
+                />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_margin="5dp"
+                android:id="@+id/rec_listcup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="0dp"
+                android:scrollbars="vertical"
+                android:scrollbarThumbVertical="@android:color/darker_gray"
+                android:fadeScrollbars="false"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingRight="5dp"
+            android:background="@drawable/corner_onesideup"
+            android:layout_weight="1.4">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/totalmoney"
+                android:text="Tong tien:"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/mauchu"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:id="@+id/numbertotalmoney"
+                android:text="98000"
+                android:textColor="@color/colortien"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/moneyofcustomer"
+                android:text="Tien cua khach:"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/mauchu"
+                android:layout_below="@+id/numbertotalmoney"
+                />
+            <EditText
+                android:padding="5dp"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:inputType="number"
+                android:textSize="14sp"
+                android:textColor="@color/colortien"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/numbertotalmoney"
+                android:id="@+id/numbermoneyofcustomer"
+               />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/numbermoneyofcustomer"
+                android:text="Khuyen mai"
+                android:textColor="@color/mauchu"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/discount"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/numbermoneyofcustomer"
+                android:text="0"
+                android:textColor="@color/colortien"
+                android:id="@+id/numberdiscount"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/returncustomer"
+                android:text="Tien thua:"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/mauchu"
+                android:layout_below="@id/numberdiscount"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/numberreturnmoney"
+                android:text="0"
+
+                android:layout_alignParentRight="true"
+                android:textColor="@color/colortien"
+                android:layout_below="@id/numberdiscount"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:weightSum="10"
+        android:orientation="vertical"
+        android:layout_weight="5.5"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:weightSum="10"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="8.5">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rec_category"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="0dp"
+                android:scrollbars="vertical"
+                android:scrollbarThumbVertical="@android:color/darker_gray"
+                android:fadeScrollbars="false"
+                />
+        </RelativeLayout>
+         <RelativeLayout
+            android:layout_width="0dp"
+             android:layout_height="match_parent"
+            android:layout_weight="8.5">
+
+             <androidx.recyclerview.widget.RecyclerView
+                 android:id="@+id/rec_cupname"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:layout_alignParentEnd="true"
+                 android:layout_alignParentBottom="true"
+               />
+         </RelativeLayout>
+
+        </LinearLayout>
+        <RelativeLayout
+            android:background="@drawable/corner_onesideup1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5">
+
+            <Button
+                android:id="@+id/btn_find"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableTop="@drawable/ic_baseline_search_24"
+                android:text="tim kiem"
+                android:layout_margin="5dp"
+                android:background="@drawable/trongoc"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/btn_find"
+                android:layout_margin="5dp"
+                android:visibility="invisible"
+                android:id="@+id/edttimkiem"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_13sp"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

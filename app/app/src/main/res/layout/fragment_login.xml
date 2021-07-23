@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/anhnen"
+        >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="234dp"
+            android:layout_height="105dp"
+            android:layout_marginLeft="240dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/logo1" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content">
+
+
+            <EditText
+                android:padding="5dp"
+                android:textColor="#F44336"
+                android:id="@+id/txt_User"
+                android:layout_width="280dp"
+                android:layout_height="45dp"
+                android:textSize="@dimen/text_13sp"
+                android:background="#CFCCCC"
+                android:layout_toRightOf="@id/icon_user"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:hint="USERNAME" />
+
+            <ImageView
+                android:id="@+id/icon_user"
+                android:layout_width="55dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="160dp"
+                android:layout_marginTop="0dp"
+                android:src="@drawable/avata"
+               />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="280dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:layout_toRightOf="@id/imageView2"
+                android:hint="Password"
+                app:hintEnabled="true"
+                app:passwordToggleEnabled="true">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#CFCCCC"
+                    android:padding="5dp"
+                    android:textSize="17sp"
+                    android:textColor="#F44336"
+                    android:id="@+id/edt_password"
+                    android:inputType="textPassword"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="55dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="160dp"
+                android:layout_marginTop="0dp"
+                android:src="@drawable/passs"
+                />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_height="wrap_content">
+
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_SignIn"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="15dp"
+
+            android:text="Dang nhap"
+
+            android:background="@drawable/trongoc"
+            />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

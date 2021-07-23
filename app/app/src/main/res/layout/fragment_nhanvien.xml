@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#56C222">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="30dp"
+    android:background="@color/white"
+    >
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_toLeftOf="@+id/txt_tittle"
+        android:src="@drawable/ic_baseline_edit_calendar_24"
+        android:layout_marginRight="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Ca Lam"
+
+        android:layout_marginTop="10dp"
+        android:textColor="#B86C02"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txt_tittle"
+
+        android:textDirection="firstStrong"
+        />
+    <TextView
+        android:textColor="#B86C02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_tittle"
+        android:text="Ho va Ten: "
+        android:id="@+id/hvt"
+        android:textSize="@dimen/text_13sp"
+        android:layout_marginLeft="50dp"
+        />
+    <TextView
+        android:textColor="#B86C02"
+        android:textSize="@dimen/text_13sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/hvt"
+        android:text="Tran Duc Thanh"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/txt_tittle"
+        android:textDirection="firstStrong"
+        android:id="@+id/txt_hvt"
+        />
+    <TextView
+        android:textSize="@dimen/text_13sp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hvt"
+        android:text="Chuc vu:"
+        android:textColor="#B86C02"
+        android:layout_marginLeft="50dp"
+        android:id="@+id/cv"
+        />
+
+    <TextView
+        android:textSize="@dimen/text_13sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_hvt"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/hvt"
+        android:text="Nhan vien"
+        android:id="@+id/txt_cv"
+        android:textColor="#B86C02"
+        android:textDirection="firstStrong" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_tittle"
+        android:text="Ngay: "
+        android:id="@+id/time"
+        android:textColor="#B86C02"
+        android:textSize="@dimen/text_13sp"
+        android:layout_toRightOf="@id/txt_tittle"
+        android:layout_marginLeft="50dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/time"
+        android:text="01-06-2021"
+        android:textSize="@dimen/text_13sp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#B86C02"
+        android:layout_below="@id/txt_tittle"
+        android:textDirection="firstStrong"
+        android:id="@+id/txt_time"
+        />
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/time"
+        android:layout_toRightOf="@id/txt_tittle"
+        android:layout_marginTop="10dp"
+        android:spinnerMode="dropdown"
+        android:id="@+id/spinner_ca"
+        android:textSize="@dimen/text_13sp"
+        android:layout_marginLeft="50dp"
+        android:textColor="#B86C02"
+        />
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/spinner_ca"
+        android:layout_marginTop="10dp"
+        android:text="Dong y"
+        android:textSize="@dimen/text_13sp"
+        android:id="@+id/btn_ok"
+        android:background="@drawable/trongoc"
+
+        />
+
+</RelativeLayout>
+</RelativeLayout>

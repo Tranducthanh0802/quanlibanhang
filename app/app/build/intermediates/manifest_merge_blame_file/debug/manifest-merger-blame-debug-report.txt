@@ -1,0 +1,121 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="tranthanh.dmt.appbanhang"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="22"
+8-->C:\Android\AppBanHang\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->C:\Android\AppBanHang\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Android\AppBanHang\app\src\main\AndroidManifest.xml:5:5-67
+11-->C:\Android\AppBanHang\app\src\main\AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->C:\Android\AppBanHang\app\src\main\AndroidManifest.xml:6:5-79
+12-->C:\Android\AppBanHang\app\src\main\AndroidManifest.xml:6:22-76
+13
+14    <application
+14-->C:\Android\AppBanHang\app\src\main\AndroidManifest.xml:8:5-28:19
+15        android:allowBackup="true"
+15-->C:\Android\AppBanHang\app\src\main\AndroidManifest.xml:9:9-35
+16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+16-->[androidx.core:core:1.3.2] C:\Users\Think\.gradle\caches\transforms-2\files-2.1\6052420ac95e5d2c366379eb88072210\core-1.3.2\AndroidManifest.xml:24:18-86
+17        android:debuggable="true"
+18        android:icon="@mipmap/ic_launcher"
+18-->C:\Android\AppBanHang\app\src\main\AndroidManifest.xml:10:9-43
+19        android:label="@string/app_name"
+19-->C:\Android\AppBanHang\app\src\main\AndroidManifest.xml:11:9-41
+20        android:roundIcon="@mipmap/ic_launcher_round"
+20-->C:\Android\AppBanHang\app\src\main\AndroidManifest.xml:12:9-54
+21        android:supportsRtl="true"
+21-->C:\Android\AppBanHang\app\src\main\AndroidManifest.xml:13:9-35
+22        android:testOnly="true"
+23        android:theme="@style/Theme.AppBanHang"
+23-->C:\Android\AppBanHang\app\src\main\AndroidManifest.xml:14:9-48
+24        android:usesCleartextTraffic="true" >
+24-->C:\Android\AppBanHang\app\src\main\AndroidManifest.xml:15:9-44
+25        <activity
+25-->C:\Android\AppBanHang\app\src\main\AndroidManifest.xml:16:9-22:20
+26            android:name="tranthanh.dmt.appbanhang.Splash_activity"
+26-->C:\Android\AppBanHang\app\src\main\AndroidManifest.xml:16:19-50
+27            android:screenOrientation="landscape" >
+27-->C:\Android\AppBanHang\app\src\main\AndroidManifest.xml:16:51-88
+28            <intent-filter>
+28-->C:\Android\AppBanHang\app\src\main\AndroidManifest.xml:17:13-21:29
+29                <action android:name="android.intent.action.MAIN" />
+29-->C:\Android\AppBanHang\app\src\main\AndroidManifest.xml:18:17-69
+29-->C:\Android\AppBanHang\app\src\main\AndroidManifest.xml:18:25-66
+30
+31                <category android:name="android.intent.category.LAUNCHER" />
+31-->C:\Android\AppBanHang\app\src\main\AndroidManifest.xml:20:17-77
+31-->C:\Android\AppBanHang\app\src\main\AndroidManifest.xml:20:27-74
+32            </intent-filter>
+33        </activity>
+34        <activity
+34-->C:\Android\AppBanHang\app\src\main\AndroidManifest.xml:23:9-27:20
+35            android:name="tranthanh.dmt.appbanhang.MainActivity"
+35-->C:\Android\AppBanHang\app\src\main\AndroidManifest.xml:24:13-41
+36            android:screenOrientation="landscape" >
+36-->C:\Android\AppBanHang\app\src\main\AndroidManifest.xml:25:13-50
+37        </activity>
+38
+39        <service
+39-->[com.google.firebase:firebase-database:19.7.0] C:\Users\Think\.gradle\caches\transforms-2\files-2.1\09d8c5aaffc1f0bb0dd8f95ccfeab24f\jetified-firebase-database-19.7.0\AndroidManifest.xml:29:9-35:19
+40            android:name="com.google.firebase.components.ComponentDiscoveryService"
+40-->[com.google.firebase:firebase-database:19.7.0] C:\Users\Think\.gradle\caches\transforms-2\files-2.1\09d8c5aaffc1f0bb0dd8f95ccfeab24f\jetified-firebase-database-19.7.0\AndroidManifest.xml:30:13-84
+41            android:directBootAware="true"
+41-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Think\.gradle\caches\transforms-2\files-2.1\df7d0f7461e5d4a0f9494d8e65ad47fa\jetified-firebase-common-19.5.0\AndroidManifest.xml:35:13-43
+42            android:exported="false" >
+42-->[com.google.firebase:firebase-database:19.7.0] C:\Users\Think\.gradle\caches\transforms-2\files-2.1\09d8c5aaffc1f0bb0dd8f95ccfeab24f\jetified-firebase-database-19.7.0\AndroidManifest.xml:31:13-37
+43            <meta-data
+43-->[com.google.firebase:firebase-database:19.7.0] C:\Users\Think\.gradle\caches\transforms-2\files-2.1\09d8c5aaffc1f0bb0dd8f95ccfeab24f\jetified-firebase-database-19.7.0\AndroidManifest.xml:32:13-34:85
+44                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+44-->[com.google.firebase:firebase-database:19.7.0] C:\Users\Think\.gradle\caches\transforms-2\files-2.1\09d8c5aaffc1f0bb0dd8f95ccfeab24f\jetified-firebase-database-19.7.0\AndroidManifest.xml:33:17-109
+45                android:value="com.google.firebase.components.ComponentRegistrar" />
+45-->[com.google.firebase:firebase-database:19.7.0] C:\Users\Think\.gradle\caches\transforms-2\files-2.1\09d8c5aaffc1f0bb0dd8f95ccfeab24f\jetified-firebase-database-19.7.0\AndroidManifest.xml:34:17-82
+46            <!--
+47                This registrar is not defined in the dynamic-module-support sdk itself to allow non-firebase
+48                clients to use it as well, by defining this registrar in their own core/common library.
+49            -->
+50            <meta-data
+50-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Think\.gradle\caches\transforms-2\files-2.1\df7d0f7461e5d4a0f9494d8e65ad47fa\jetified-firebase-common-19.5.0\AndroidManifest.xml:43:13-45:85
+51                android:name="com.google.firebase.components:com.google.firebase.dynamicloading.DynamicLoadingRegistrar"
+51-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Think\.gradle\caches\transforms-2\files-2.1\df7d0f7461e5d4a0f9494d8e65ad47fa\jetified-firebase-common-19.5.0\AndroidManifest.xml:44:17-121
+52                android:value="com.google.firebase.components.ComponentRegistrar" />
+52-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Think\.gradle\caches\transforms-2\files-2.1\df7d0f7461e5d4a0f9494d8e65ad47fa\jetified-firebase-common-19.5.0\AndroidManifest.xml:45:17-82
+53        </service>
+54
+55        <activity
+55-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Think\.gradle\caches\transforms-2\files-2.1\ae24dd11ea8be73803d00966a0f9a577\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+56            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+56-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Think\.gradle\caches\transforms-2\files-2.1\ae24dd11ea8be73803d00966a0f9a577\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+57            android:exported="false"
+57-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Think\.gradle\caches\transforms-2\files-2.1\ae24dd11ea8be73803d00966a0f9a577\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+58            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+58-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Think\.gradle\caches\transforms-2\files-2.1\ae24dd11ea8be73803d00966a0f9a577\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+59
+60        <provider
+60-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Think\.gradle\caches\transforms-2\files-2.1\df7d0f7461e5d4a0f9494d8e65ad47fa\jetified-firebase-common-19.5.0\AndroidManifest.xml:26:9-31:39
+61            android:name="com.google.firebase.provider.FirebaseInitProvider"
+61-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Think\.gradle\caches\transforms-2\files-2.1\df7d0f7461e5d4a0f9494d8e65ad47fa\jetified-firebase-common-19.5.0\AndroidManifest.xml:27:13-77
+62            android:authorities="tranthanh.dmt.appbanhang.firebaseinitprovider"
+62-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Think\.gradle\caches\transforms-2\files-2.1\df7d0f7461e5d4a0f9494d8e65ad47fa\jetified-firebase-common-19.5.0\AndroidManifest.xml:28:13-72
+63            android:directBootAware="true"
+63-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Think\.gradle\caches\transforms-2\files-2.1\df7d0f7461e5d4a0f9494d8e65ad47fa\jetified-firebase-common-19.5.0\AndroidManifest.xml:29:13-43
+64            android:exported="false"
+64-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Think\.gradle\caches\transforms-2\files-2.1\df7d0f7461e5d4a0f9494d8e65ad47fa\jetified-firebase-common-19.5.0\AndroidManifest.xml:30:13-37
+65            android:initOrder="100" />
+65-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Think\.gradle\caches\transforms-2\files-2.1\df7d0f7461e5d4a0f9494d8e65ad47fa\jetified-firebase-common-19.5.0\AndroidManifest.xml:31:13-36
+66
+67        <meta-data
+67-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Think\.gradle\caches\transforms-2\files-2.1\0089979aeee6e106c7c9bdb4b762486b\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+68            android:name="com.google.android.gms.version"
+68-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Think\.gradle\caches\transforms-2\files-2.1\0089979aeee6e106c7c9bdb4b762486b\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+69            android:value="@integer/google_play_services_version" />
+69-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Think\.gradle\caches\transforms-2\files-2.1\0089979aeee6e106c7c9bdb4b762486b\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+70    </application>
+71
+72</manifest>
